@@ -1,0 +1,17 @@
+{
+  "name": "tp_tp2_primer_servidor_node",
+  "version": "1.0.0",
+  "description": "Primer servidor NODE.JS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "index.js",
+    "watch": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Daniela Zimñiak",
+  "license": "ISC"
+}
