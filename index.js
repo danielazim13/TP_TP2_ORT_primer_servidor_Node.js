@@ -5,19 +5,18 @@ function func(array, condicion) {
 
     let arrayFiltrado = []
 
-    if (!condicion && !tiposValidos.includes(typeof(condicion))) {
+    if (!condicion && !tiposValidos.includes(typeof condicion)) {
         throw new Error ("Condición inválida")
     } 
 
     for (let i = 0; i < array.length; i++) {
-        if(typeof(array[i])===typeof(condicion)){
+        if(typeof array[i] ===typeof condicion){
             arrayFiltrado.push(array[i])
         }
     }
 
     let arrayOrdenadoAsc = arrayFiltrado.sort(function(a, b) {return a - b} )
 
-    
     if (arrayOrdenadoAsc.length===0){
         throw new Error ("No hay datos que cumplan con la condición")
     }
@@ -29,7 +28,6 @@ function func(array, condicion) {
     });
 
     return arrayOrdenadoAsc
-   
 }
 
 let condicion = "Hola Mundo :)"
