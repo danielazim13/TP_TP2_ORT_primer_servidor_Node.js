@@ -10,7 +10,7 @@ function func(array, condicion) {
     } 
 
     for (let i = 0; i < array.length; i++) {
-        if(typeof array[i] ===typeof condicion){
+        if(typeof array[i] === typeof condicion){
             arrayFiltrado.push(array[i])
         }
     }
